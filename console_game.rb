@@ -1,4 +1,4 @@
-    require_relative 'board.rb'
+   require_relative 'board.rb'
     require_relative 'console_human.rb'
     require_relative 'console_random_ai.rb'
     require_relative 'console_sequential_ai.rb'
@@ -18,7 +18,6 @@ class Console_game
     def who_plays
         puts """
         Who are you playing against? (select one)
-
         1. Human player
         2. Random
         3. Sequential
@@ -38,27 +37,26 @@ class Console_game
     end
 
     def draw_board
-        puts """
-        Let's get started!
+    puts """
         
-        Sample board with numbers:
+    Let's get started!
+    Sample board with numbers:
         
-         1 | 2 | 3 
-        ---+---+---
-         4 | 5 | 6 
-        ---+---+---
-         7 | 8 | 9 
+     1 | 2 | 3
+    ---+---+---
+     4 | 5 | 6
+    ---+---+---
+     7 | 8 | 9
         
+    Game Board:
         
-        Game Board:
+     #{board.grid[0]} | #{board.grid[1]} | #{board.grid[2]}
+    -----------
+     #{board.grid[3]} | #{board.grid[4]} | #{board.grid[5]}
+    -----------
+     #{board.grid[6]} | #{board.grid[7]} | #{board.grid[8]}
+    #{current_player.marker} --- Its your move
         
-         #{board.grid[0]} | #{board.grid[1]} | #{board.grid[2]}
-        ---+---+---
-         #{board.grid[3]} | #{board.grid[4]} | #{board.grid[5]}
-        ---+---+---
-         #{board.grid[6]} | #{board.grid[7]} | #{board.grid[8]}
-
-        #{@current_player.marker} it is your turn
         """
     end
 

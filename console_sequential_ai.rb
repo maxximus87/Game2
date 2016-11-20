@@ -13,4 +13,4 @@ class SequentialAI
         board.index("")
     end
  
-    end
+end

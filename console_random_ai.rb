@@ -18,4 +18,4 @@ class RandomAI
         end
     end
  
-    end
+end
